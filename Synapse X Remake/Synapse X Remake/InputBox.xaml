@@ -1,0 +1,32 @@
+﻿<Window x:Class="Synapse_X_Remake.InputBox"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Synapse_X_Remake"
+        mc:Ignorable="d"
+        Title="Synapse InputBox" 
+        Height="122" 
+        Width="300"
+        Background="Transparent"
+        WindowStyle="None"
+        WindowStartupLocation="CenterScreen"
+        AllowsTransparency="True">
+    <Grid>
+        <Border BorderBrush="Transparent" BorderThickness="1" HorizontalAlignment="Left" Height="122" VerticalAlignment="Top" Width="300" Background="#FF333333">
+            <Grid>
+                <Border BorderThickness="1" HorizontalAlignment="Left" Height="30" VerticalAlignment="Top" Width="298" Background="#FF3C3C3C">
+                    <Grid>
+                        <Image HorizontalAlignment="Left" Height="28" VerticalAlignment="Top" Width="30" Source="sxlogosmallwhite_OJJ_icon.ico"/>
+                        <Label x:Name="TitleLabel" Content="Synapse X - Input" HorizontalAlignment="Center" VerticalAlignment="Top" Foreground="White" Margin="87,1,87,0"/>
+                        <Button x:Name="CloseButton" Content="X" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="22" Margin="274,0,0,0" Height="22" Foreground="White"/>
+                    </Grid>
+                </Border>
+                <TextBox x:Name="InputTextBox" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="278" Margin="10,35,0,0"/>
+                <Label x:Name="DescriptionLabel" Content="(desc)" Margin="10,63,10,0" Foreground="{DynamicResource PrimaryTextColor}" Height="25" VerticalAlignment="Top"/>
+                <Button x:Name="EnterBtutton" Content="Enter" Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="38" Margin="250,93,0,0" Height="21" Foreground="White" RenderTransformOrigin="0.833,0.725" Background="#FF3C3C3C"/>
+            </Grid>
+        </Border>
+
+    </Grid>
+</Window>
